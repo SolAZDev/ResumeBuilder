@@ -4,7 +4,12 @@
     "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
     "vue.volar",
-    "wayou.vscode-todo-highlight"
+    "ms-vscode.live-server",
+    "amandeepmittal.pug",
+    "syler.sass-indented",
+    "abdelaziz18003.quasar-snippets",
+    "quanzaiyu.vscode-vue-pug-enhanced",
+    "aaron-bond.better-comments"
   ],
   "unwantedRecommendations": [
     "octref.vetur",
