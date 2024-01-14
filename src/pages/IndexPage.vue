@@ -1,42 +1,20 @@
-<template>
-  <q-page class="row items-center justify-evenly">
-    <example-component
-      title="Example component"
-      active
-      :todos="todos"
-      :meta="meta"
-    ></example-component>
-  </q-page>
+<template lang="pug">
+q-page.column.justify-center.items-center
+  .col.text-center.q-pt-xl
+    .text-h1 Resume Builder
+    .text-subtitle2 Your One stop to build multiple resumes from one profile
+  .col #[q-btn(color='primary', flat, label='Profile Editor', to="/profile")]
+  .col #[q-btn(color='primary', flat, label='Import Profile')]
+  .col #[q-btn(color='primary', flat, label='Layouts Editor', to="/layout")]
+  .col #[q-btn(color='primary', flat, label='Assemble Resume', to="/build")]
+  ImportProfile
 </template>
 
 <script setup lang="ts">
-import { Todo, Meta } from 'components/models';
-import ExampleComponent from 'components/ExampleComponent.vue';
+import ImportProfile from 'src/components/ImportProfile.vue';
 import { ref } from 'vue';
 
-const todos = ref<Todo[]>([
-  {
-    id: 1,
-    content: 'ct1'
-  },
-  {
-    id: 2,
-    content: 'ct2'
-  },
-  {
-    id: 3,
-    content: 'ct3'
-  },
-  {
-    id: 4,
-    content: 'ct4'
-  },
-  {
-    id: 5,
-    content: 'ct5'
-  }
-]);
-const meta = ref<Meta>({
-  totalCount: 1200
-});
+function CheckForProfile(): boolean {
+  return false;
+}
 </script>
